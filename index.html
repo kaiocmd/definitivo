@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Otturismo – Viva o Nordeste</title>
+  <link rel="stylesheet" href="style.css" />
+  <!-- Google Fonts: Bebas Neue (display) + Nunito (body) -->
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Nunito:wght@400;600;700;800;900&display=swap" rel="stylesheet" />
+  <!-- Font Awesome para ícones -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+</head>
+<body>
+
+  <!-- ========== HEADER / NAVBAR ========== -->
+  <header class="navbar" id="navbar">
+    <div class="nav-container">
+      <a href="#inicio" class="logo">
+        <span class="logo-ott">OTT</span><span class="logo-turismo">URISMO</span>
+        <span class="logo-tag">✦ Recife · PE</span>
+      </a>
+
+      <!-- Menu desktop -->
+      <nav class="nav-links" id="navLinks">
+        <a href="#inicio">Início</a>
+        <a href="#pacotes">Pacotes</a>
+        <a href="#sobre">Sobre</a>
+        <a href="#faq">FAQ</a>
+        <a href="#contato" class="nav-cta">Contato</a>
+      </nav>
+
+      <!-- Botão hambúrguer (mobile) -->
+      <button class="hamburger" id="hamburger" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- ========== HERO / BANNER PRINCIPAL ========== -->
+  <section class="hero" id="inicio">
+    <!-- Vídeo/overlay de fundo -->
+    <div class="hero-bg">
+      <div class="hero-gradient"></div>
+      <div class="hero-dots"></div>
+    </div>
+
+    <div class="hero-content">
+      <span class="hero-badge">✦ Agência Oficial de Turismo do Nordeste</span>
+      <h1 class="hero-title">
+        Viva o<br/>
+        <span class="highlight">Nordeste</span><br/>
+        com a Otturismo
+      </h1>
+      <p class="hero-sub">
+        Pacotes inesquecíveis saindo de Recife. Viagens que viram histórias incríveis! Carnaval, São João e Festival.
+      </p>
+
+      <div class="hero-actions">
+        <!-- Botão WhatsApp principal -->
+        <a href="https://wa.me/5581997858972?text=Olá!%20Quero%20conhecer%20os%20pacotes%20da%20Otturismo%20para%20o%20Nordeste!" 
+           target="_blank" class="btn-whatsapp-hero" id="heroWhatsapp">
+          <i class="fab fa-whatsapp"></i>
+          Falar no WhatsApp
+        </a>
+        <a href="#pacotes" class="btn-outline-hero">
+          Ver Pacotes <i class="fas fa-arrow-down"></i>
+        </a>
+      </div>
+
+    </div>
+
+    <!-- Scroll indicator -->
+    <div class="scroll-indicator">
+      <span>Role para baixo</span>
+      <i class="fas fa-chevron-down bounce"></i>
+    </div>
+  </section>
+
+  <!-- ========== FAIXA DE BENEFÍCIOS ========== -->
+  <section class="benefits-bar">
+    <div class="benefits-container">
+      <div class="benefit-item">
+        <i class="fas fa-shield-alt"></i>
+        <span>Viagem Segura & Garantida</span>
+      </div>
+      <div class="benefit-item">
+        <i class="fas fa-tag"></i>
+        <span>Melhor Preço do Nordeste</span>
+      </div>
+      <div class="benefit-item">
+        <i class="fab fa-whatsapp"></i>
+        <span>Suporte 24h via WhatsApp</span>
+      </div>
+      
+    </div>
+  </section>
+
+  <!-- ========== SEÇÃO DE PACOTES ========== -->
+  <section class="packages" id="pacotes">
+    <div class="section-header">
+      <span class="section-tag">✦ Nossos Destinos</span>
+      <h2 class="section-title">Pacotes em <span class="highlight">Destaque</span></h2>
+      <p class="section-sub">Escolha seu destino dos sonhos e entre em contato agora via WhatsApp</p>
+    </div>
+
+    <div class="cards-grid" id="cardsGrid">
+      <!-- Os cards são gerados pelo JavaScript -->
+    </div>
+  </section>
+
+  <!-- ========== SOBRE A EMPRESA ========== -->
+  <section class="about" id="sobre">
+  <div class="about-container">
+    <div class="about-image-area">
+  <div class="about-gallery">
+    <button class="gallery-btn prev" id="aboutPrev" aria-label="Foto anterior">
+      <i class="fas fa-chevron-left"></i>
+    </button>
+
+    <div class="about-gallery-track" id="aboutGalleryTrack">
+      <img src="images/foto1.png" alt="Clientes da Otturismo em passeio" class="about-gallery-img" loading="lazy" />
+      <img src="images/foto2.png" alt="Grupo viajando com a Otturismo" class="about-gallery-img" loading="lazy" />
+      <img src="images/foto3.png" alt="Experiência de viagem com a Otturismo" class="about-gallery-img" loading="lazy" />
+      <img src="images/foto4.png" alt="Passeio organizado pela Otturismo" class="about-gallery-img" loading="lazy" />
+      <img src="images/foto5.png" alt="Passeio organizado pela Otturismo" class="about-gallery-img" loading="lazy" />
+      <img src="images/foto6.png" alt="Passeio organizado pela Otturismo" class="about-gallery-img" loading="lazy" />
+    </div>
+
+    <button class="gallery-btn next" id="aboutNext" aria-label="Próxima foto">
+      <i class="fas fa-chevron-right"></i>
+    </button>
+
+    <div class="about-badge-float">
+      <i class="fas fa-map-marker-alt"></i>
+      Recife, PE
+    </div>
+  </div>
+</div>
+
+      <div class="about-text">
+        <span class="section-tag">✦ Quem Somos</span>
+        <h2 class="section-title">Nascemos no <span class="highlight">Recife</span>, vivemos para o Mundo</h2>
+        <p>
+          A <strong>Otturismo</strong> é uma agência de viagens pernambucana apaixonada pela beleza do Nordeste brasileiro.
+          Há 2 anos de existência, conectamos viajantes a destinos paradisíacos com segurança, conforto e preços acessíveis.
+        </p>
+        <p>
+          Nosso time é local: conhecemos cada praia, cada restaurante e cada hotel. Por isso garantimos
+          uma experiência autêntica que você não encontra em agências grandes.
+        </p>
+
+        <div class="about-highlights">
+          <div class="about-hl">
+            <i class="fas fa-check-circle"></i>
+            <span>Parcelamento em até 12x no cartão</span>
+          </div>
+          <div class="about-hl">
+            <i class="fas fa-check-circle"></i>
+            <span>Roteiros personalizados para grupos e família</span>
+          </div>
+          <div class="about-hl">
+            <i class="fas fa-check-circle"></i>
+            <span>Atendimento humanizado pelo WhatsApp</span>
+          </div>
+        </div>
+
+        <a href="https://wa.me/5581997858972?text=Olá!%20Quero%20saber%20mais%20sobre%20a%20Otturismo!" 
+           target="_blank" class="btn-whatsapp-main">
+          <i class="fab fa-whatsapp"></i> Fale com um especialista
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== FAQ ========== -->
+  <section class="faq" id="faq">
+    <div class="section-header">
+      <span class="section-tag">✦ Dúvidas Frequentes</span>
+      <h2 class="section-title">Perguntas <span class="highlight">Frequentes</span></h2>
+    </div>
+
+    <div class="faq-list" id="faqList">
+      <!-- Gerado pelo JavaScript -->
+    </div>
+  </section>
+
+  <!-- ========== CONTATO ========== -->
+  <section class="contact" id="contato">
+    <div class="contact-container">
+      <div class="contact-text">
+        <span class="section-tag">✦ Fale Conosco</span>
+        <h2 class="section-title">Pronto para a sua <span class="highlight">próxima aventura?</span></h2>
+        <p>Entre em contato agora mesmo e receba uma proposta personalizada para você ou seu grupo.</p>
+
+        <div class="contact-info">
+          <div class="contact-item">
+            <i class="fab fa-whatsapp"></i>
+            <div>
+              <strong>WhatsApp</strong>
+              <span>(81) 99785-8972</span>
+            </div>
+          </div>
+          <div class="contact-item">
+            <i class="fas fa-map-marker-alt"></i>
+            <div>
+              <strong>Localização</strong>
+              <span>Recife – PE, Brasil</span>
+            </div>
+          </div>
+          <div class="contact-item">
+            <i class="fas fa-clock"></i>
+            <div>
+              <strong>Atendimento</strong>
+              <span>Seg–Dom, 8h às 23h</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="contact-cta-box">
+        <div class="cta-box-inner">
+          <i class="fab fa-whatsapp cta-icon"></i>
+          <h3>Chama no Zap!</h3>
+          <p>Resposta em menos de 5 minutos durante o horário comercial.</p>
+          <a href="https://wa.me/5581997858972?text=Olá!%20Vim%20pelo%20site%20e%20quero%20conhecer%20os%20pacotes%20da%20Otturismo!" 
+             target="_blank" class="btn-whatsapp-main full-width">
+            <i class="fab fa-whatsapp"></i> Iniciar Conversa
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== RODAPÉ ========== -->
+  <footer class="footer">
+    <div class="footer-top">
+      <div class="footer-brand">
+        <span class="logo-ott">OTT</span><span class="logo-turismo">URISMO</span>
+        <p>Sua agência de turismo nordestina.<br/>Levando você a lugares inesquecíveis.</p>
+        <div class="footer-social">
+          <a href="https://www.instagram.com/otturismo/" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+          <a href="https://wa.me/5581997858972" target="_blank" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+        </div>
+      </div>
+
+      <div class="footer-links-col">
+        <h4>Destinos</h4>
+        <ul>
+          <li><a href="#pacotes">Festival de Inverno</a></li>
+          <li><a href="#pacotes">Vale do Catimbau</a></li>
+          <li><a href="#pacotes">São Benedito do Sul</a></li>
+          <li><a href="#pacotes">Bonito</a></li>
+          <li><a href="#pacotes">Ilha Santo Aleixo</a></li>
+          <li><a href="#pacotes">Garanhuns</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-links-col">
+        <h4>Empresa</h4>
+        <ul>
+          <li><a href="#sobre">Sobre nós</a></li>
+          <li><a href="#faq">FAQ</a></li>
+          <li><a href="#contato">Contato</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-contact-col">
+        <h4>Contato</h4>
+        <p><i class="fab fa-whatsapp"></i> (81) 99785-8972</p>
+        <p><i class="fas fa-map-marker-alt"></i> Recife – PE, Brasil</p>
+        <p><i class="fas fa-clock"></i> Seg–Dom, 8h às 23h</p>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <p>© 2026 Otturismo. Todos os direitos reservados.</p>
+      <p>Feito com <i class="fas fa-heart" style="color:#2ecc71"></i> em Recife, PE</p>
+    </div>
+  </footer>
+
+  <!-- ========== BOTÃO FLUTUANTE WHATSAPP ========== -->
+  <a href="https://wa.me/5581997858972?text=Olá!%20Vim%20pelo%20site%20e%20quero%20saber%20mais%20sobre%20os%20pacotes%20da%20Otturismo!" 
+     target="_blank" 
+     class="whatsapp-float" 
+     id="whatsappFloat"
+     aria-label="Falar no WhatsApp">
+    <i class="fab fa-whatsapp"></i>
+    <span class="float-pulse"></span>
+  </a>
+
+  <script src="script.js"></script>
+</body>
+</html>
