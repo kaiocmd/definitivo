@@ -45,13 +45,13 @@ const pacotes = [
     badge: "29/08",
     descricao: "Prepare-se para viver dias inesquecíveis entre trilhas, paisagens deslumbrantes e cenários de tirar o fôlego no incrível Vale do Catimbau.",
     inclusos: ["Hospedagem inclusa","As 4 principais refeições inclusas","Transporte ida e volta","Taxas das trilhas inclusas","Guia credenciado acompanhando o grupo","Seguro viagem e transporte","Brindes exclusivos","Pulseiras de identificação","Luau especial","Ponto de hidratação durante a programação"],
-    esgotado: false
+    esgotado: true
   },
   {
     destino: "São Benedito do Sul",
     estado: "PE",
     imagem: "images/setembro.png",
-    duracao: "12/09",
+    duracao: "13/09",
     preco: "R$ 230,00",
     badge: "12/09",
     descricao: "Prepare-se para uma experiência inesquecível em meio à natureza, com uma trilha que passa por 7 lindas cachoeiras, todas com parada para banho e momentos de muita diversão e contemplação.",
@@ -205,10 +205,10 @@ function renderizarPacotes() {
           href="${gerarLinkWhatsApp(p.destino)}" 
           target="_blank" 
           class="card-btn"
-          aria-label="Falar no WhatsApp sobre pacote para ${p.destino}"
+          aria-label="Reservar pacote para ${p.destino}"
         >
           <i class="fab fa-whatsapp"></i>
-          Falar no WhatsApp
+          Reservar Agora
         </a>`;
 
     card.innerHTML = `
